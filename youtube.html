@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Youtube Clone</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="styles/index.css">
+        <link rel="stylesheet" href="styles/nav.css">
+        <link rel="stylesheet" href="styles/videos.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
+    </head>
+    <body>
+        <!-- NAV BAR -->
+        <header class="navbar">
+            <div class="nav-left">
+                <img class="hamburger" src="icons/hamburger-menu.svg">
+                <img class="youtube-logo" src="icons/youtube-logo.svg">
+            </div>
+            <div class="nav-middle">
+                <input type="text" placeholder="Search" class="search-input">
+                <button class="search-button">
+                    <img src="icons/search.svg" class="search-icon">
+                    <div class="tooltip">Search</div>
+                </button>
+                <button class="mic-button">
+                    <img src="icons/microphone.svg" class="mic-icon">
+                    <div class="tooltip">Voice</div>
+                </button>
+            </div>
+            <div class="nav-right">
+                <div class="upload-icon-container">
+                    <img src="icons/upload.svg" class="upload-icon">
+                    <div class="tooltip">Upload</div>
+                </div>
+                <div class="apps-button">
+                    <img src="icons/youtube-apps.svg" class="apps-icon">
+                    <div class="tooltip">Apps</div>
+                </div>
+                <div class="alerts-button">
+                    <img src="icons/notifications.svg" class="alerts-icon">
+                    <p class="alert-count">3</p>
+                    <div class="tooltip">Alerts</div>
+                </div>
+                <img src="profile-pics/me.jpg" class="active-user-pic">
+            </div>
+        </header>
+
+        <!-- SIDEBAR -->
+         <nav class="sidebar">
+            <div class="sidebar-button home-button">
+                <img src="icons/home.svg">
+                <p class="sidebar-button-text">Home</p>
+            </div>
+            <div class="sidebar-button explore-button">
+                <img src="icons/explore.svg">
+                <p class="sidebar-button-text">Explore</p>
+            </div>
+            <div class="sidebar-button subscriptions-button">
+                <img src="icons/subscriptions.svg">
+                <p class="sidebar-button-text">Subscriptions</p>
+            </div>
+            <div class="sidebar-button originals-button">
+                <img src="icons/originals.svg">
+                <p class="sidebar-button-text">Originals</p>
+            </div>
+            <div class="sidebar-button music-button">
+                <img src="icons/youtube-music.svg">
+                <p class="sidebar-button-text">Music</p>
+            </div>
+            <div class="sidebar-button library-button">
+                <img src="icons/library.svg">
+                <p class="sidebar-button-text">Library</p>
+            </div>
+        </nav>
+
+        <!-- VIDEO CONTENT -->
+        <main class="video-grid" id="videoContainer"></main>
+        <script src="script.js"></script>
+    </body>
+</html>
